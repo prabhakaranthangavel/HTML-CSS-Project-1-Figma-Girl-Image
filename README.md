@@ -1,9 +1,10 @@
 # HTML-CSS-Day-5-Figma-Hero-Image
-It contains HTML and CSS Day 5 Figma Hero Image
+
+This is my first Project.
 
 Click the deploy link :
 
-https://project1-figma-hero-image.netlify.app/
+https://project1-figma-hero-image.netlify.app/ 
 
 (or else)
 
