@@ -1,0 +1,217 @@
+/* predefined css colors */
+:root {
+    --orange-color: #da722c;
+    --dark-blue-color: #023047;
+    --dark-color: #070917;
+    --light-color: #e8f7fb;
+    --light-blue-color: #6f7dfb;
+  }
+ /* ************************************************************************************************************************* */
+  
+ *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .wrapper {
+    max-width: 1134px;
+    margin: 0 auto;
+  }
+ /* ************************************************************************************************************************* */
+
+ /* Buttons */
+  
+  .btn {
+    padding: 16px 32px;
+    border-radius: 24px;
+    color: #fff;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  /* button1:dark */
+  .btn.dark {
+    background: var(--dark-blue-color);
+  }
+  /* button2:light */
+  .btn.light {
+    background: var(--orange-color);
+  }
+  /* star icon */
+  .btn.enrol-icon::before {
+    content: url("images/enrol-icon.svg");
+    position: absolute;
+    top: 50%;
+    left: 32px;
+    transform: translateY(-50%);
+  }
+  
+  .btn.enrol-icon {
+    padding-left: 60px;
+  }
+
+/* ************************************************************************************************************************* */
+
+  /* Header */
+  
+  header {
+    background: linear-gradient(180deg, #6f7dfb 0%, #26308c 100%);
+    height: 100vh;
+    width: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 1134px;
+    top: 0;
+    padding: 36px 0;
+    z-index: 100;
+    transition: all 500ms ease;
+  }
+ 
+  nav .logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    color: #ffffff;
+  }
+  
+  nav ul {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    list-style: none;
+    margin: 0;
+  }
+  
+  nav ul li a {
+    font-weight: bold;
+    font-size: 16px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+/* ************************************************************************************************************************* */
+  
+  /* Hero Section */
+  
+  .hero-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    position: relative;
+    color: #fff;
+  }
+  
+  .hero-section .left h1 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 125%;
+    margin-bottom: 0;
+  }
+  
+  .hero-section .left p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 200%;
+    margin-bottom: 30px;
+    width: 457px;
+  }
+  
+  .hero-section .left {
+    flex: 1;
+  }
+  
+  .hero-section .right {
+    align-self: flex-end;
+  }
+  
+  .hero-section .right img {
+    height: 520px;
+    vertical-align: middle;
+  }
+
+ /* ************************************************************************************************************************* */
+
+  /* Achievement Cards */
+  
+  .achievement-card {
+    position: absolute;
+    min-width: 200px;
+    color: var(--dark-blue-color);
+  }
+  
+  .achievement-card .content {
+    border-radius: 24px;
+    background: #fff;
+    padding: 8px 32px;
+    z-index: 10;
+    position: relative;
+  }
+  
+  .achievement-card.students-enrolled {
+    left: 49%;
+    top: 270px;
+  }
+  
+  .achievement-card.overall-rating {
+    left: 47%;
+    top: 470px;
+  }
+  
+  .achievement-card .content div {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .achievement-card h3 {
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    flex: 1;
+  }
+  
+  .achievement-card img {
+    flex: 1;
+    height: 42px;
+    margin-left: -24px;
+  }
+  
+  .achievement-card p {
+    font-weight: normal;
+    font-size: 16px;
+    margin-top: -8px;
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  
+  .achievement-card .bg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #6f7dfb 0%, #3b448f 100%);
+    border-radius: 24px;
+    top: 8px;
+    left: 8px;
+    z-index: 1;
+  }
+
+/* ************************************************************************************************************************* */
